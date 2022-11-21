@@ -7,6 +7,7 @@ import com.example.demo.repositories.ITipoUserRepository;
 import com.example.demo.servicesinterfaces.ITipoUsuarioService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TipoUsuarioServicelmpl implements ITipoUsuarioService {
@@ -19,6 +20,14 @@ public class TipoUsuarioServicelmpl implements ITipoUsuarioService {
     public List<TipoUsuario> list() { return tR.findAll(); }
     @Override
     public void delete(int idTipoUsuario) {tR.deleteById(idTipoUsuario); }
+
+    //MODIFICADO
     @Override
+    public Optional<TipoUsuario>listarPorId(int idTipoUsuario){return tR.findById(idTipoUsuario);}
+    @Override
+    public List<TipoUsuario>buscarNombre(String nameTipoUsuario){return tR.buscarNombre(nameTipoUsuario);}
+
+    /*@Override
     public List<TipoUsuario> search(String TipoUser) { return tR.search(TipoUser); }
+     */
 }
