@@ -58,7 +58,7 @@ public class Anuncio implements Serializable {
     public void setIdAnuncio(int idAnuncio) {
         this.idAnuncio = idAnuncio;
     }
-
+    public void capitulo5(){}
     public String getImagen() {
         return imagen;
     }
