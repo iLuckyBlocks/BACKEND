@@ -43,7 +43,7 @@ public class Anuncio {
     public void setIdAnuncio(int idAnuncio) {
         this.idAnuncio = idAnuncio;
     }
-    public void capitulo6(){}
+    public void capitulo5(){}
     public String getImagen() {
         return imagen;
     }
