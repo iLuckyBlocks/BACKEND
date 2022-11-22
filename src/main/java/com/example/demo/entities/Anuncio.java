@@ -44,6 +44,8 @@ public class Anuncio {
         this.idAnuncio = idAnuncio;
     }
 
+    public void Arrendador(){}
+
     public String getImagen() {
         return imagen;
     }
